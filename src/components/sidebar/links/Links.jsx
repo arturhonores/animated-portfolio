@@ -1,5 +1,5 @@
 const Links = () => {
-  return <div className="links"></div>;
+  return <div className="links">links</div>;
 };
 
 export default Links;
