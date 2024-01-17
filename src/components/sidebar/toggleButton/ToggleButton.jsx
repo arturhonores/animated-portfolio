@@ -1,5 +1,5 @@
 const ToggleButton = () => {
-  return <div>togglebutton</div>;
+  return <button>togglebutton</button>;
 };
 
 export default ToggleButton;
