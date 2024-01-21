@@ -12,7 +12,7 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
         >
-          ArturHonores DEV
+          ArturHonores
         </motion.span>
         <div className="social">
           <a href="#">
