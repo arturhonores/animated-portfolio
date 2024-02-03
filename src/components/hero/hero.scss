@@ -64,7 +64,9 @@
       top: 0;
       right: 0;
       img {
-        height: 100%; //for image completed
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
       }
       @include mobile {
         height: 50%;

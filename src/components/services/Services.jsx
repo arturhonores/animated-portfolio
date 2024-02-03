@@ -30,7 +30,9 @@ const Services = () => {
             initial="initial"
             // whileInView="animate" animación inicia cuando inicia la vista
             ref={ref}
-            animate={isInview && "animate"}
+            // animate={isInview && "animate"} no funciona en mobile
+            animate={"animate"}
+
         >
             <motion.div className="textContainer" variants={variants}>
                 <p>I focus on helping your brand grow <br />and move forward</p>
