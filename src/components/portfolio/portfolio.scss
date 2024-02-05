@@ -65,7 +65,8 @@
           object-fit: cover;
 
           @include mobile {
-            object-fit: contain;
+            // object-fit: contain;
+            object-fit: cover;
           }
         }
       }
@@ -78,7 +79,7 @@
 
         @include mobile {
           transform: none !important;
-          padding: 10px;
+          padding: 0 10px 10px 10px;
           align-items: center;
           text-align: center;
         }
