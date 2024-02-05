@@ -29,9 +29,13 @@
       }
 
       h2 {
-        font-size: 30px;
-        color: rgb(123, 26, 220);
+        font-size: 44px;
+        // color: rgb(123, 26, 220);
+        color: orange;
         letter-spacing: 5px;
+        @include mobile {
+          font-size: 30px;
+        }
       }
 
       h1 {

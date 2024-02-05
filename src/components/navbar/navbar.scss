@@ -3,25 +3,24 @@
   height: 100px;
 
   .wrapper {
-    // max-width: 1366px; Lama
     max-width: 1200px;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: flex-end;
     height: 100%;
 
     @include mobile {
-      justify-content: flex-end;
       padding: 20px;
     }
 
-    span {
-      font-weight: bold;
-      @include mobile {
-        display: none;
-      }
-    }
+    // span {
+    //   font-weight: bold;
+    //   @include mobile {
+    //     display: none;
+    //   }
+    // }
     .social {
       display: flex;
       gap: 20px;
