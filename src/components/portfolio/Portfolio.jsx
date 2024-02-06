@@ -12,9 +12,9 @@ const items = [
   },
   {
     id: 2,
-    title: "Next Commerce",
-    img: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, veniam fugit beatae voluptas, magni velit fuga deleniti nihil asperiores vero debitis distinctio quod.",
+    title: "Cash Minder",
+    img: "./cashMinder.jpg",
+    desc: "Web application for tracking personal expenses.",
     tech: "React-Redux, React-Router-DOM, Redux Toolkit, Axios, Tailwind CSS",
   },
   {
@@ -54,7 +54,7 @@ const Single = ({ item }) => {
               <span>Tech Stack: </span>
               {item.tech}
             </p>
-            <button>View work</button>
+            <a>View work</a>
           </motion.div>
         </div>
       </div>
