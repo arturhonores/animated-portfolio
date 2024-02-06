@@ -39,6 +39,7 @@ const sliderVariants = {
 };
 
 const Hero = () => {
+  const sections = ["Portfolio", "Contact"];
   return (
     <div className="hero">
       <div className="wrapper">
@@ -53,8 +54,10 @@ const Hero = () => {
             <motion.h1 variants={textVariants}>Web Developer</motion.h1>
           </div>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>Last projects</motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.a variants={textVariants} href={`#${sections[0]}`}>
+              Last projects
+            </motion.a>
+            <motion.a variants={textVariants}>Contact Me</motion.a>
           </motion.div>
           <motion.img
             variants={textVariants}
