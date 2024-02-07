@@ -9,27 +9,39 @@ const items = [
     img: "./desafio.jpg",
     desc: "Quiz of 12 questions about JavaScript.",
     tech: "React-Redux, React-Router-DOM, Redux Toolkit, Axios, Tailwind CSS",
+    url: "https://quizjavascript.arturhonores.dev",
   },
   {
     id: 2,
     title: "Cash Minder",
     img: "./cashMinder.jpg",
     desc: "Web application for tracking personal expenses.",
-    tech: "React-Redux, React-Router-DOM, Redux Toolkit, Axios, Tailwind CSS",
+    tech: "Fronted => React, React-Router-Dom, Nivo, Axios, Tailwind CSS || Backend => NodeJS, Express, MongoDB, Mongoose, jsonwebtoken",
+    url: "https://cashminder.arturhonores.dev",
   },
   {
     id: 3,
-    title: "Air Nostrum",
-    img: "https://images.pexels.com/photos/3987066/pexels-photo-3987066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, veniam fugit beatae voluptas, magni velit fuga deleniti nihil asperiores vero debitis distinctio quod.",
-    tech: "React-Redux, React-Router-DOM, Redux Toolkit, Axios, Tailwind CSS",
+    title: "Space Invaders",
+    img: "./space.jpg",
+    desc: "Desktop version of the video game 'Space Invaders.",
+    tech: "HTML 5 Canvas, Vanilla JavaScript, CSS",
+    url: "https://game.arturhonores.dev",
   },
   {
     id: 4,
-    title: "Moove Cars",
-    img: "https://images.pexels.com/photos/1188751/pexels-photo-1188751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, veniam fugit beatae voluptas, magni velit fuga deleniti nihil asperiores vero debitis distinctio quod.",
-    tech: "React-Redux, React-Router-DOM, Redux Toolkit, Axios, Tailwind CSS",
+    title: "Portfolio V.1.0",
+    img: "./portfolio1.jpg",
+    desc: "First version of this portfolio.",
+    tech: "React, Tailwind CSS, EmailJS, Google Maps API",
+    url: "https://arturhonores.dev/",
+  },
+  {
+    id: 5,
+    title: "Landing Page",
+    img: "./abogado.jpg",
+    desc: "Landin Page for immigration lawyer.",
+    tech: "HTML, CSS3, Vanilla JavaScript, Tiny Slider.",
+    url: "https://lawyer.arturhonores.dev/",
   },
 ];
 
@@ -54,7 +66,9 @@ const Single = ({ item }) => {
               <span>Tech Stack: </span>
               {item.tech}
             </p>
-            <a>View work</a>
+            <a href={item.url} target="_blank" rel="noreferrer">
+              View work
+            </a>
           </motion.div>
         </div>
       </div>
@@ -74,7 +88,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Features Work</h1>
+        <h1>Featured projects</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
