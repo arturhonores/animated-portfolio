@@ -12,6 +12,7 @@
     width: 100%;
     padding: 10px;
     flex-direction: column;
+    gap: 20px;
   }
 
   .textContainer {
@@ -21,7 +22,7 @@
     gap: 40px;
 
     @include mobile {
-      gap: 20px;
+      gap: 15px;
       text-align: center;
       align-items: center;
       margin-top: 70px;
@@ -36,6 +37,13 @@
       }
     }
 
+    h2 {
+      color: orange;
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
     span {
       font-weight: 300;
     }
@@ -46,7 +54,7 @@
     position: relative;
 
     @include mobile {
-      padding: 50px;
+      padding: 10px 50px 50px 50px;
       width: 100%;
     }
 
