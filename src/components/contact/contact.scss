@@ -13,6 +13,7 @@
     padding: 10px;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
   }
 
   .textContainer {
@@ -25,7 +26,9 @@
       gap: 15px;
       text-align: center;
       align-items: center;
-      margin-top: 70px;
+      justify-content: end;
+      order: 2;
+      flex: none;
     }
 
     h1 {
@@ -54,8 +57,10 @@
     position: relative;
 
     @include mobile {
-      padding: 10px 50px 50px 50px;
+      padding: 10px 50px 10px 50px;
       width: 100%;
+      order: 1;
+      flex: 0;
     }
 
     .phoneSvg {
@@ -73,6 +78,9 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @include mobile {
+      }
 
       input,
       textarea {
