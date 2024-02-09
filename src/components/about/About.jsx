@@ -27,32 +27,30 @@ const About = () => {
       className="about"
       variants={variants}
       initial="initial"
-      whileInView="animate"
+      //   whileInView="animate"
       //animación inicia cuando inicia la vista
       ref={ref}
       // animate={isInview && "animate"} no funciona en mobile
-      //   animate={"animate"}
+      animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
-        <p>
-          I focus on helping your brand grow <br />
-          and move forward
-        </p>
+        <p>I am WEB DEVELOPER</p>
         <hr />
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp" alt="" />
+          {/* <img src="/people.webp" alt="" /> */}
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
+            <motion.b whileHover={{ color: "orange" }}>Learn</motion.b> more
+            about me
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
-            Business.
+            by <motion.b whileHover={{ color: "orange" }}>Downloading</motion.b>{" "}
+            my
           </h1>
-          <button>WHAT WE DO?</button>
+          <button>resume</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
