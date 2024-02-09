@@ -27,10 +27,11 @@ const About = () => {
       className="about"
       variants={variants}
       initial="initial"
-      // whileInView="animate" animación inicia cuando inicia la vista
+      whileInView="animate"
+      //animación inicia cuando inicia la vista
       ref={ref}
       // animate={isInview && "animate"} no funciona en mobile
-      animate={"animate"}
+      //   animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
