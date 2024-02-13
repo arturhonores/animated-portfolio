@@ -58,18 +58,6 @@
         text-align: center;
         gap: 20px;
       }
-
-      // img {
-      //   width: 300px;
-      //   height: 100px;
-      //   border-radius: 50px;
-      //   object-fit: cover;
-
-      //   @include mobile {
-      //     width: 200px;
-      //     height: 50px;
-      //   }
-      // }
       h1 {
         font-size: 96px;
         font-weight: 100;
@@ -99,12 +87,13 @@
   .listContainer {
     flex: 2;
     display: flex;
-    // max-width: 1366px;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: auto;
+    background-color: greenyellow;
 
     @include mobile {
-      flex-direction: column;
       width: 100%;
     }
 

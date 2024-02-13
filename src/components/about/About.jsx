@@ -1,6 +1,7 @@
 import "./about.scss";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Slider from "../slider/Slider";
 
 const variants = {
   initial: {
@@ -54,7 +55,8 @@ const About = () => {
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
-        <motion.div
+        <Slider />
+        {/* <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
@@ -65,43 +67,7 @@ const About = () => {
             magnam praesentium nam asperiores sed, soluta magni?
           </p>
           <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
-            facere pariatur, ipsa quaerat sapiente rem harum repudiandae nihil
-            magnam praesentium nam asperiores sed, soluta magni?
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
-            facere pariatur, ipsa quaerat sapiente rem harum repudiandae nihil
-            magnam praesentium nam asperiores sed, soluta magni?
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
-            facere pariatur, ipsa quaerat sapiente rem harum repudiandae nihil
-            magnam praesentium nam asperiores sed, soluta magni?
-          </p>
-          <button>Go</button>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </motion.div>
   );
