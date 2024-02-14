@@ -1,6 +1,6 @@
 import "./about.scss";
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 import Slider from "../slider/Slider";
 
 const variants = {
@@ -23,6 +23,22 @@ const variants = {
 const About = () => {
   const ref = useRef();
   const isInview = useInView(ref, { margin: "-100px" });
+  const controls = useAnimation();
+
+  const vibracion = {
+    x: [0, -5, 5, -5, 5, -3, 3, -2, 2, 0],
+    transition: { duration: 0.5, repeat: Infinity, repeatDelay: 2 }, // Repite infinitamente
+  };
+
+  // Lógica para iniciar la vibración cuando isInview es true
+  if (isInview) {
+    controls.start({
+      x: vibracion.x,
+      transition: vibracion.transition,
+      transitionEnd: { loop: Infinity }, // Añade un bucle infinito
+    });
+  }
+
   return (
     <motion.div
       className="about"
@@ -35,7 +51,10 @@ const About = () => {
       animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
-        <p>I am WEB DEVELOPER</p>
+        <p>
+          Crafting websites with proficiency in <br /> Javascript, TypeScript,
+          and more
+        </p>
         <hr />
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
@@ -50,7 +69,7 @@ const About = () => {
             by <motion.b whileHover={{ color: "orange" }}>Downloading</motion.b>{" "}
             my
           </h1>
-          <button>resume</button>
+          <motion.button animate={vibracion}>resume</motion.button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>

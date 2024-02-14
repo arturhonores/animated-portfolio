@@ -19,13 +19,18 @@
       align-self: center;
       text-align: center;
       flex-direction: column;
+      gap: 0;
     }
 
     p {
       font-weight: 200;
       font-size: 20px;
-      color: gray;
+      color: white;
       text-align: right;
+
+      @include mobile {
+        padding: 2rem 0 0 0;
+      }
     }
 
     hr {
@@ -73,7 +78,9 @@
         border-radius: 50px;
         background-color: #ffa500;
         border: none;
-        font-size: 24px;
+        font-size: 48px;
+        font-style: italic;
+        font-weight: 600;
         cursor: pointer;
 
         @include mobile {
