@@ -40,7 +40,6 @@ const About = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          {/* <img src="/people.webp" alt="" /> */}
           <h1>
             <motion.b whileHover={{ color: "orange" }}>Learn</motion.b> more
             about me
@@ -56,18 +55,6 @@ const About = () => {
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <Slider />
-        {/* <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
-            facere pariatur, ipsa quaerat sapiente rem harum repudiandae nihil
-            magnam praesentium nam asperiores sed, soluta magni?
-          </p>
-          <button>Go</button>
-        </motion.div> */}
       </motion.div>
     </motion.div>
   );
