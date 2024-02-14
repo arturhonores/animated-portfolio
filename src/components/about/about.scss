@@ -8,6 +8,10 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include mobile {
+    justify-content: stretch;
+  }
+
   .textContainer {
     flex: 1;
     align-self: flex-end;
@@ -51,6 +55,7 @@
 
     @include mobile {
       width: 100%;
+      flex: initial;
     }
 
     .title {
