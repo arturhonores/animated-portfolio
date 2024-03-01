@@ -1,5 +1,5 @@
 import "./contact.scss";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -40,6 +40,9 @@ const Contact = () => {
       .then(
         (result) => {
           setSuccess(true);
+          setTimeout(() => {
+            setSuccess(false); // Después de 1 segundo, ocultar el mensaje de éxito
+          }, 2000);
         },
         (error) => {
           setError(true);
@@ -112,9 +115,11 @@ const Contact = () => {
           <input type="email" required placeholder="Email" name="email" />
           <textarea rows={8} placeholder="Message" name="message"></textarea>
           <button>SUBMIT</button>
-          {error && "Error"}
-          {success && "Success"}
         </motion.form>
+        {/* Sección de errores */}
+        {error && <div className="error">Error</div>}
+        {/* Sección de éxito */}
+        {success && <div className="success">✅ ¡send message!</div>}
       </div>
     </motion.div>
   );
