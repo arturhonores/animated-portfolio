@@ -69,7 +69,7 @@
         gap: 20px;
       }
       h1 {
-        font-size: 96px;
+        font-size: 76px;
         font-weight: 100;
 
         @include mobile {
@@ -101,48 +101,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
 
     @include mobile {
       width: 100%;
-    }
-
-    .box {
-      padding: 50px;
-      border: 0.5px solid gray;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      @include mobile {
-        border: none;
-        align-items: center;
-        gap: 20px;
-        padding: 10px;
-      }
-
-      p {
-        @include mobile {
-          display: none;
-        }
-      }
-
-      button {
-        padding: 10px;
-        background-color: orange;
-        border: none;
-        cursor: pointer;
-
-        @include mobile {
-          background-color: transparent;
-          border: 1px solid orange;
-          border-radius: 5px;
-          color: orange;
-          width: 50%;
-          padding: 5px;
-        }
-      }
     }
   }
 }

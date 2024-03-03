@@ -22,7 +22,7 @@ const Slider = () => {
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
       }}
       autoplay={{
         delay: 1500,
@@ -33,19 +33,19 @@ const Slider = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        <img src="/html-ok.svg" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        <img src="/css-ok.svg" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        <img src="/js-ok.svg" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        <img src="/react-ok.svg" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        <img src="/mongodb-logo.svg" />
       </SwiperSlide>
       <SwiperSlide>
         <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
