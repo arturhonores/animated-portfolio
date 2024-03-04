@@ -39,6 +39,9 @@ const Slider = () => {
         <img src="/css-ok.svg" />
       </SwiperSlide>
       <SwiperSlide>
+        <img src="/tailwindcss-ok.svg" />
+      </SwiperSlide>
+      <SwiperSlide>
         <img src="/js-ok.svg" />
       </SwiperSlide>
       <SwiperSlide>
@@ -48,16 +51,13 @@ const Slider = () => {
         <img src="/mongodb-logo.svg" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        <img src="/express-ok.svg" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        <img src="/nodejs-ok.svg" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        <img src="/typescript-ok.svg" />
       </SwiperSlide>
     </Swiper>
   );

@@ -52,8 +52,7 @@ const About = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          Crafting websites with proficiency in <br /> Javascript, TypeScript,
-          and more
+          Welcome to my <br /> preferred technology stack
         </p>
         <hr />
       </motion.div>

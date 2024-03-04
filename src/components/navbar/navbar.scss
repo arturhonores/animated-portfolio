@@ -15,20 +15,18 @@
       padding: 20px;
     }
 
-    // span {
-    //   font-weight: bold;
-    //   @include mobile {
-    //     display: none;
-    //   }
-    // }
     .social {
       display: flex;
       gap: 20px;
-      // align-items: center;
 
       img {
-        width: 18px;
-        height: 18px;
+        width: 28px;
+        height: 28px;
+
+        @include mobile {
+          width: 18px;
+          height: 18px;
+        }
       }
     }
   }

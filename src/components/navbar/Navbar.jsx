@@ -1,6 +1,6 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
@@ -15,17 +15,11 @@ const Navbar = () => {
           ArturHonores
         </motion.span> */}
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/arturhonores/">
+            <img src="/linkedin-icon.svg" alt="" />
           </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/arturhonores">
+            <img src="/github-icon.svg" alt="" />
           </a>
         </div>
       </div>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2500 2500">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-size: 247.72px;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-6 {
+        fill: url(#Degradado_sin_nombre_2);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_2" data-name="Degradado sin nombre 2" x1="951.72" y1="1669.75" x2="952.49" y2="1669.48" gradientTransform="translate(-2379048 2505664.75) scale(2500 -1500)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2298bd"/>
+      <stop offset="1" stop-color="#0ed7b5"/>
+    </linearGradient>
+  </defs>
+  <text class="cls-2" transform="translate(314.66 2309.94)"><tspan class="cls-3" x="0" y="0">T</tspan><tspan x="140.46" y="0">AI</tspan><tspan class="cls-5" x="405.01" y="0">L</tspan><tspan class="cls-4" x="541.01" y="0">W</tspan><tspan x="820.68" y="0">IND </tspan><tspan class="cls-1" x="1373.32" y="0">C</tspan><tspan x="1552.42" y="0">SS</tspan></text>
+  <path class="cls-6" d="M1249.61,688.05c-249.97,0-406.21,124.99-468.7,374.96,93.74-124.99,203.1-171.86,328.09-140.61,71.31,17.83,122.28,69.56,178.7,126.83,91.91,93.29,198.27,201.26,430.61,201.26,249.97,0,406.21-124.99,468.7-374.96-93.74,124.99-203.1,171.86-328.09,140.61-71.31-17.83-122.28-69.56-178.7-126.83-91.91-93.29-198.27-201.26-430.61-201.26ZM780.91,1250.49c-249.97,0-406.21,124.99-468.7,374.96,93.74-124.99,203.1-171.86,328.09-140.61,71.31,17.83,122.28,69.56,178.7,126.83,91.91,93.29,198.27,201.26,430.61,201.26,249.97,0,406.21-124.99,468.7-374.96-93.74,124.99-203.1,171.86-328.09,140.61-71.31-17.83-122.28-69.56-178.7-126.83-91.91-93.29-198.27-201.26-430.61-201.26Z"/>
+</svg>
