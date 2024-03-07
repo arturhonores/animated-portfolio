@@ -16,6 +16,10 @@
     width: 200px;
     height: 200px;
   }
+  @include tablet {
+    width: 300px;
+    height: 200px;
+  }
 }
 
 .swiper-slide img {
