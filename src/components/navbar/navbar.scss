@@ -7,13 +7,13 @@
     margin: auto;
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     justify-content: flex-end;
     height: 100%;
+    padding: 0 20px;
 
-    @include mobile {
-      padding: 20px;
-    }
+    // @include mobile {
+    //   padding: 20px;
+    // }
 
     .social {
       display: flex;
