@@ -70,8 +70,8 @@ const About = () => {
           </h1>
           <motion.a
             animate={vibracion}
-            href="https://www.dropbox.com/scl/fi/9032bo14numx7j3xsxeir/CV-developer-24_compressed.pdf?rlkey=xgpeg0t500ywkzeb484979ur3&dl=0"
-            download="CV-Arturo-Honores"
+            href="/CV-arturo-honores.pdf"
+            download="CV-arturo-honores"
           >
             resume
           </motion.a>

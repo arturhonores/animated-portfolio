@@ -25,7 +25,11 @@ const itemVariants = {
   },
 };
 
-const Links = () => {
+const Links = ({ toggleSidebar }) => {
+  const handleLinkClick = () => {
+    toggleSidebar(); // Cierra el Sidebar al hacer clic en un enlace
+  };
+
   const items = ["Homepage", "About", "Portfolio", "Contact"];
 
   return (
@@ -34,6 +38,7 @@ const Links = () => {
         <motion.a
           href={`#${item}`}
           key={item}
+          onClick={handleLinkClick}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}

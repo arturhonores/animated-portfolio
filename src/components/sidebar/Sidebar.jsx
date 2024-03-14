@@ -10,7 +10,7 @@ const variants = {
     transition: {
       type: "spring",
       stiffness: 20,
-    }
+    },
   },
   closed: {
     clipPath: "circle(30px at 50px 50px)",
@@ -19,16 +19,19 @@ const variants = {
       type: "spring",
       stiffness: 400,
       damping: 40,
-    }
+    },
   },
 };
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
+  const toggleSidebar = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
   return (
     <motion.div className="sidebar" animate={open ? "open" : "closed"}>
       <motion.div className="bg" variants={variants}>
-        <Links />
+        <Links isOpen={open} toggleSidebar={toggleSidebar} />
       </motion.div>
       <ToggleButton setOpen={setOpen} />
     </motion.div>
