@@ -68,7 +68,13 @@ const About = () => {
             by <motion.b whileHover={{ color: "orange" }}>Downloading</motion.b>{" "}
             my
           </h1>
-          <motion.button animate={vibracion}>resume</motion.button>
+          <motion.a
+            animate={vibracion}
+            href="https://drive.google.com/file/d/15risqAMLEYM19BCqQa1KYd2YPjcu0g6b/view?usp=drivesdk"
+            download="CV-Arturo-Honores"
+          >
+            resume
+          </motion.a>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
